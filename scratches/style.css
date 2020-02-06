@@ -136,7 +136,128 @@
     font-family: "NunitoSans-Regular";
     color: #787878;
 }
+
 .about span {
     display: inline-block;
     margin-top: 38px;
+}
+
+.background_skills {
+    width: 100%;
+    height: 570px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #f8f9f9;
+}
+
+.background_skills:after {
+    content: "";
+    background-color: #e9e9e9;
+    width: 50%;
+    height: 570px;
+    position: relative;
+}
+
+.skills {
+    display: flex;
+    width: 683px;
+    height: 570px;
+    flex-direction: column;
+    list-style: none;
+    padding: 166px 0 0 100px;
+}
+
+.skills h3 {
+    font-size: 30px;
+    font-family: "Montserrat-Medium";
+    margin-bottom: 29px;
+}
+
+.skills h4 {
+    font-size: 12px;
+    font-family: "Montserrat-Medium";
+    margin-bottom: 12px;
+}
+
+.skills li {
+    margin: 2px 0;
+    width: 500px;
+    font-size: 12px;
+    font-family: "Montserrat-Medium";
+}
+
+.bar {
+    background: #d8d8d8;
+    display: block;
+    height: 3px;
+    overflow: hidden;
+}
+
+.bar span {
+    height: 3px;
+    float: left;
+    background: #10c9c3;
+}
+
+.skills li:first-of-type:after {
+    content: "75%";
+    position: relative;
+    bottom: 30px;
+    left: 115px;
+}
+
+.skills li:nth-of-type(2):after {
+    content: "90%";
+    position: relative;
+    bottom: 30px;
+    left: 160px;
+}
+
+.skills li:last-of-type:after {
+    content: "65%";
+    position: relative;
+    bottom: 30px;
+    left: 102px;
+}
+
+.ui_ux {
+    width: 75%;
+    animation: ui_ux 2s;
+}
+
+.web_development {
+    width: 90%;
+    animation: web_development 2s;
+}
+
+.marketing {
+    width: 65%;
+    animation: marketing 2s;
+}
+
+@keyframes ui_ux {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 75%;
+    }
+}
+
+@keyframes web_development {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes marketing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 65%;
+    }
 }
