@@ -22,6 +22,18 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Work Sans Regular';
+    src: url('../fonts/WorkSans-Regular.eot');
+    src: url('../fonts/WorkSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/WorkSans-Regular.woff2') format('woff2'),
+    url('../fonts/WorkSans-Regular.woff') format('woff'),
+    url('../fonts/WorkSans-Regular.ttf') format('truetype'),
+    url('../fonts/WorkSans-Regular.svg#WorkSans-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 *, *:before, *:after {
     box-sizing: border-box;
@@ -592,4 +604,70 @@
 .form button:hover {
     cursor: pointer;
     border: solid 1px black;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: #8f8f8f;
+}
+
+.footer {
+    width: 1366px;
+    height: 284px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 99px 0 0 98px;
+}
+
+.footer h3 {
+    font-family: "Montserrat-Medium";
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.footer div:nth-of-type(2) p:nth-of-type(2) {
+    font-family: "Work Sans Regular";
+}
+
+.footer div {
+    font-family: "NunitoSans-Regular";
+    font-size: 15px;
+}
+
+.footer div:first-of-type {
+    width: 471px;
+}
+
+.footer div:nth-of-type(2) {
+    width: 299px;
+}
+
+.footer div:nth-of-type(3) {
+    width: 301px;
+    display: flex;
+    justify-content: start;
+}
+
+.footer div:last-of-type {
+    width: 199px;
+    display: flex;
+    justify-content: start;
+}
+
+.footer div nav ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.footer div nav ul a {
+    text-decoration: none;
+    color: #8f8f8f;
+}
+
+.footer div nav ul:last-of-type {
+    margin-right: 55px;
 }
