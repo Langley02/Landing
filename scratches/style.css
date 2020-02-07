@@ -482,7 +482,7 @@
     background-color: #10c9c3;
 }
 
-.testimonials {
+.owl-carousel {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -492,17 +492,31 @@
     color: white;
     font-family: "Montserrat-Medium";
     text-align: center;
+    position: relative;
 }
 
-.testimonials h3 {
+.owl-carousel h3 {
     font-size: 24px;
     line-height: 36px;
 
 }
 
-.testimonials p {
+.owl-carousel p {
     font-size: 12px;
-    margin-bottom: 129px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.owl-dots .owl-dot span {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: #b0e8e6;
+    border-radius: 6px;
+    margin: 0 5px;
+}
+
+.owl-dots {
     text-align: center;
 }
 

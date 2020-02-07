@@ -1,8 +1,20 @@
-$(document).ready(function () {
-    $("#carousel1").owlCarousel({
-        items: 1,
-        loop: true,
-        nav: true,
-        margin: 100
+$(document).ready(function(){
+
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:0,
+        nav:true,
+        navText: [ '', '' ],
+
+        responsive:{
+            0:{
+                items:1
+            },
+
+            1000:{
+                items:1
+            }
+        }
     });
+
 });
